@@ -1,5 +1,6 @@
 <script lang="ts">
     import Narrow from '$lib/components/layout/narrow/Narrow.svelte';
+    import NarrowDark from '$lib/components/layout/narrow/NarrowDark.svelte';
     import PieChart from '$lib/components/charts/pie/PieChart.svelte';
     import PercentChart from '$lib/components/charts/pie/PercentChart.svelte';
     import ChartGrid from '$lib/components/charts/grid/ChartGrid.svelte';
@@ -10,13 +11,15 @@
     import ScoreChart from '$lib/components/charts/metrics/ScoreChart.svelte';
 </script>
 
-<h1>Kanach Index</h1>
+<svelte:head>
+    <title>Kanach Index</title>
+</svelte:head>
 
-<Narrow>
+<NarrowDark>
     <div class="score">
         <ScoreChart value={2.8} />
     </div>
-</Narrow>
+</NarrowDark>
 
 <Narrow>
     <ChartGrid>
