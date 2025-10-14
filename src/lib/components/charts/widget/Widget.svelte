@@ -9,10 +9,7 @@
 
 <div class="widget">
     <div class="title">{title}</div>
-
-    {#if subtitle}
-        <div class="subtitle">{subtitle}</div>
-    {/if}
+    <div class="subtitle">{subtitle}</div>
 
     {@render children?.()}
 </div>
@@ -34,6 +31,7 @@
     }
 
     .subtitle {
+        height: 22px;
         font-size: 0.9em;
         opacity: 0.5;
     }

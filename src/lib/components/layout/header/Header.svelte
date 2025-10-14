@@ -6,9 +6,9 @@
     <header>
         <h1>Kanach Index</h1>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Donate</a></li>
         </ul>
     </header>
 </Narrow>
