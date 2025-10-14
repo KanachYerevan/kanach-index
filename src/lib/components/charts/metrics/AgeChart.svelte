@@ -91,6 +91,7 @@
 <style>
 .chart {
     height: 110px;
+    width: 100%;
     margin: 50px auto 0;
 }
 </style>
