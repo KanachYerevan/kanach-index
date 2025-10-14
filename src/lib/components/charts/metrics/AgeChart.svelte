@@ -25,6 +25,7 @@
                         borderColor: ['#f9fafb'],
                         borderWidth: 2,
                         borderRadius: 4,
+                        barThickness: 30,
                     },
                     {
                         label: 'Подрастающие',
@@ -33,6 +34,7 @@
                         borderColor: ['#f9fafb'],
                         borderWidth: 2,
                         borderRadius: 4,
+                        barThickness: 30,
                     },
                     {
                         label: 'Молодые',
@@ -41,6 +43,7 @@
                         borderColor: ['#f9fafb'],
                         borderWidth: 2,
                         borderRadius: 4,
+                        barThickness: 30,
                     },
                 ],
             }}
@@ -75,7 +78,11 @@
                             padding: 20,
                         },
                     },
-                }
+                    tooltip: {
+                        enabled: false,
+                    },
+                },
+                events: []
             }}
         />
     </div>
@@ -83,6 +90,7 @@
 
 <style>
 .chart {
-    height: 210px;
+    height: 110px;
+    margin: 50px auto 0;
 }
 </style>
