@@ -2,13 +2,15 @@
     type Props = {
         title: string;
         subtitle?: string;
+        help?: string;
     };
 
-    const { title, subtitle, children }: Props = $props();
+    const { title, subtitle, children, help }: Props = $props();
 </script>
 
 <div class="widget">
-    <div class="title">{title}</div>
+    <div class="title">{title}{#if help} <a class="help" href={help}>ⓘ</a>{/if}</div>
+
     <div class="subtitle">{subtitle}</div>
 
     {@render children?.()}
@@ -33,6 +35,13 @@
     .subtitle {
         height: 22px;
         font-size: 0.9em;
+        opacity: 0.5;
+    }
+
+    .help {
+        text-decoration: none;
+        margin-left: 5px;
+        color: inherit;
         opacity: 0.5;
     }
 }

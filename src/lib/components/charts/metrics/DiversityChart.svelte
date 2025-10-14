@@ -9,6 +9,6 @@
     const { value }: Props = $props();
 </script>
 
-<Widget title="Видовое разнообразие">
+<Widget title="Видовое разнообразие" help="/">
     <PercentChart {value} />
 </Widget>

@@ -10,7 +10,7 @@
     const { value }: Props = $props();
 </script>
 
-<Widget title="Индекс зрелости" subtitle="Возрастная структура">
+<Widget title="Индекс зрелости" subtitle="Возрастная структура" help="/">
     <div class="chart">
         <Chart
             type='bar'
