@@ -10,21 +10,39 @@
     const { value }: Props = $props();
 </script>
 
-<Widget title="Индекс зрелости" subtitle="Возрастная структура" help="/">
+<Widget title="Индекс зрелости" subtitle="Возрастная структура" help="/" width={2}>
     <div class="chart">
         <Chart
             type='bar'
 
             data={{
                 labels: ['Взрослые', 'Зреющие', 'Молодые'],
-                datasets: [{
-                    labels: 'Доля деревьев',
-                    data: [25, 45, 30],
-                    backgroundColor: ['#4CAF50', '#FF9800', '#2196F3'],
-                    borderColor: ['#f9fafb'],
-                    borderWidth: 2,
-                    borderRadius: 4,
-                }],
+                datasets: [
+                    {
+                        label: 'Взрослые',
+                        data: [15],
+                        backgroundColor: ['#16A34A'],
+                        borderColor: ['#f9fafb'],
+                        borderWidth: 2,
+                        borderRadius: 4,
+                    },
+                    {
+                        label: 'Подрастающие',
+                        data: [45],
+                        backgroundColor: ['#FBBF24'],
+                        borderColor: ['#f9fafb'],
+                        borderWidth: 2,
+                        borderRadius: 4,
+                    },
+                    {
+                        label: 'Молодые',
+                        data: [40],
+                        backgroundColor: ['#F97316'],
+                        borderColor: ['#f9fafb'],
+                        borderWidth: 2,
+                        borderRadius: 4,
+                    },
+                ],
             }}
 
             options={{
@@ -36,16 +54,26 @@
                         beginAtZero: true,
                         max: 100,
                         display: false,
-                    },
-                    y: {
                         grid: {
                             display: false,
                         },
+                        stacked: true,
+                    },
+                    y: {
+                        display: false,
+                        grid: {
+                            display: false,
+                        },
+                        stacked: true,
                     },
                 },
                 plugins: {
                     legend: {
-                        display: false,
+                        display: true,
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                        },
                     },
                 }
             }}
