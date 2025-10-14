@@ -8,18 +8,14 @@
     import HealthChart from '$lib/components/charts/metrics/HealthChart.svelte';
     import DiversityChart from '$lib/components/charts/metrics/DiversityChart.svelte';
     import AgeChart from '$lib/components/charts/metrics/AgeChart.svelte';
-    import ScoreChart from '$lib/components/charts/metrics/ScoreChart.svelte';
+    import MainBlock from '$lib/components/blocks/MainBlock.svelte';
 </script>
 
 <svelte:head>
     <title>Kanach Index</title>
 </svelte:head>
 
-<NarrowDark>
-    <div class="score">
-        <ScoreChart value={2.8} />
-    </div>
-</NarrowDark>
+<MainBlock />
 
 <Narrow>
     <ChartGrid>
