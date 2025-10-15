@@ -29,6 +29,7 @@ footer {
     color: #fff;
     opacity: 0.75;
 
+    height: 30px;
     line-height: 30px;
     padding: 10px 0;
 
@@ -51,6 +52,7 @@ footer {
 
         a {
             display: block;
+            margin: 0;
         }
 
         svg {
