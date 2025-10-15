@@ -115,6 +115,7 @@
 <style>
 .wrapper {
     position: relative;
+    width: 100%;
 
     &.rate_bad {
         color: #DC2626;
@@ -130,8 +131,7 @@
 }
 
 .chart {
-    height: 50px;
-    margin: 50px auto 0;
+    margin: 10px auto 0;
 }
 
 .value {

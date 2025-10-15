@@ -25,6 +25,13 @@
         flex-basis: 250px;
         flex-grow: 0;
         flex-shrink: 0;
+
+        /* Somehow this prevents the block from growing, which we need. */
+        min-width: 0;
+    }
+
+    p {
+        margin: 0 0 1rem;
     }
 }
 </style>

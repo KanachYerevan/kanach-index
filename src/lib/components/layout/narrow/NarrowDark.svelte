@@ -1,8 +1,8 @@
 <script lang="ts">
-    const { children } = $props();
+    const { color = '#cee4c5', children } = $props();
 </script>
 
-<div class="narrow">
+<div class="narrow" style:background-color={color}>
     <div class="content">
         {@render children?.()}
     </div>
@@ -10,7 +10,6 @@
 
 <style>
 .narrow {
-    background-color: #cee4c5;
     padding: 10px 0;
 
     .content {

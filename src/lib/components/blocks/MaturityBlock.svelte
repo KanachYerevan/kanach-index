@@ -22,9 +22,13 @@
     gap: 20px;
 
     & > *:first-child {
-        flex-basis: 250px;
+        flex-basis: 450px;
         flex-grow: 0;
         flex-shrink: 0;
+    }
+
+    p {
+        margin: 0 0 1rem;
     }
 }
 </style>

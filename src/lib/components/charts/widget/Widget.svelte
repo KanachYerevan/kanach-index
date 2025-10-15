@@ -19,8 +19,8 @@
 
 <style>
 .widget {
-    min-height: 290px;
     box-sizing: border-box;
+    width: 100%;
 
     display: flex;
     flex-direction: column;

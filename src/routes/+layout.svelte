@@ -1,6 +1,7 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
     import Header from '$lib/components/layout/header/Header.svelte';
+    import Footer from '$lib/components/layout/Footer.svelte';
 
     import '$lib/styles/main.css';
     import '$lib/styles/fonts.css';
@@ -16,6 +17,8 @@
     <Header />
 
     {@render children?.()}
+
+    <Footer />
 </div>
 
 <style>
