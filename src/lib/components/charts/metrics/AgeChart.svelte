@@ -11,7 +11,7 @@
     const { value }: Props = $props();
 </script>
 
-<Widget title={locale.maturityTitle()} subtitle={locale.maturitySubtitle()} help="/" width={2}>
+<Widget title={locale.maturityTitle()} subtitle={locale.maturitySubtitle()} width={2}>
     <div class="chart">
         <Chart
             type='bar'

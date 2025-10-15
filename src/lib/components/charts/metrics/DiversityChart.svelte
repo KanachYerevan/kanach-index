@@ -44,7 +44,7 @@
     };
 </script>
 
-<Widget title={locale.diversityTitle()} help="/">
+<Widget title={locale.diversityTitle()}>
     <div class={`wrapper rate_${getRate(value)}`}>
         <div class="chart">
             <Chart

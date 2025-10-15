@@ -10,6 +10,6 @@
     const { value }: Props = $props();
 </script>
 
-<Widget title={locale.healthTitle()} subtitle={locale.healthSubtitle()} help="/">
+<Widget title={locale.healthTitle()} subtitle={locale.healthSubtitle()}>
     <PercentChart {value} />
 </Widget>

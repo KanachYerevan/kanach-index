@@ -2,15 +2,14 @@
     type Props = {
         title: string;
         subtitle?: string;
-        help?: string;
         width?: number;
     };
 
-    const { title, subtitle, children, help, width = 1 }: Props = $props();
+    const { title, subtitle, children, width = 1 }: Props = $props();
 </script>
 
 <div class={`widget width_${width}`}>
-    <div class="title">{title}{#if help} <a class="help" href={help}>ⓘ</a>{/if}</div>
+    <div class="title">{title}</div>
 
     <div class="subtitle">{subtitle}</div>
 
