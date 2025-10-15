@@ -9,7 +9,7 @@
 
     const { value }: Props = $props();
 
-    const getRate = (value: number): number => {
+    const getRate = (value: number): string => {
         if (value <= 40) {
             return 'bad';
         }
@@ -29,6 +29,8 @@
                 return 'yellow';
             case 'good':
                 return 'green';
+            default:
+                return 'Unknown';
         }
     };
 
@@ -40,6 +42,8 @@
                 return locale.diversityMedium();
             case 'good':
                 return locale.diversityHigh();
+            default:
+                return 'Unknown';
         }
     };
 </script>

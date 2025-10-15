@@ -1,8 +1,11 @@
 <script lang="ts">
+    import type { Snippet } from 'svelte';
+
     type Props = {
         title: string;
         subtitle?: string;
         width?: number;
+        children?: Snippet;
     };
 
     const { title, subtitle, children, width = 1 }: Props = $props();
@@ -38,13 +41,6 @@
     .subtitle {
         height: 22px;
         font-size: 0.9em;
-        opacity: 0.5;
-    }
-
-    .help {
-        text-decoration: none;
-        margin-left: 5px;
-        color: inherit;
         opacity: 0.5;
     }
 }
