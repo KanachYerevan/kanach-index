@@ -11,11 +11,18 @@
 <style>
 .narrow {
     padding: 10px 0;
+    box-sizing: border-box;
 
     .content {
         width: 100%;
         max-width: 900px;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .narrow {
+        padding: 0 10px;
     }
 }
 </style>

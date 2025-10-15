@@ -85,4 +85,26 @@ img {
         text-align: center;
     }
 }
+
+@media (max-width: 600px) {
+    .block {
+        padding: 10px 10px;
+    }
+
+    img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .content {
+        .padded {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
 </style>

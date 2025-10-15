@@ -32,4 +32,15 @@
         margin: 0 0 1rem;
     }
 }
+
+@media (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+
+        & > *:first-child {
+            flex-basis: auto;
+        }
+    }
+}
 </style>

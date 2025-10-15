@@ -12,4 +12,11 @@
     max-width: 900px;
     margin: 0 auto;
 }
+
+@media (max-width: 900px) {
+    .narrow {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
 </style>
