@@ -11,7 +11,7 @@
         <ul>
             <li><a href="/#about">{locale.navAbout()}</a></li>
             <li><a href="/#contact">{locale.navContact()}</a></li>
-            <li><a href="/">{locale.navDonate()}</a></li>
+            <li><a href="/donate">{locale.navDonate()}</a></li>
         </ul>
     </header>
 </Narrow>
