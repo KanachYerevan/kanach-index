@@ -9,9 +9,9 @@
         <img src={LOGO} alt="Kanach Logo" />
         <h1>{locale.title()}</h1>
         <ul>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact</a></li>
-            <li><a href="/">Donate</a></li>
+            <li><a href="/">{locale.navAbout()}</a></li>
+            <li><a href="/">{locale.navContact()}</a></li>
+            <li><a href="/">{locale.navDonate()}</a></li>
         </ul>
     </header>
 </Narrow>

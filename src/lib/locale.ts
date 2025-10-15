@@ -74,6 +74,18 @@ class EnglishLocale {
     public ageMature(): string {
         return 'Mature';
     }
+
+    public navAbout(): string {
+        return 'About';
+    }
+
+    public navContact(): string {
+        return 'Contact';
+    }
+
+    public navDonate(): string {
+        return 'Donate';
+    }
 }
 
 class RussianLocale extends EnglishLocale {
@@ -139,6 +151,18 @@ class RussianLocale extends EnglishLocale {
 
     public metricDetails(): string {
         return 'Подробнее об этом показателе';
+    }
+
+    public navAbout(): string {
+        return 'О нас';
+    }
+
+    public navContact(): string {
+        return 'Связаться';
+    }
+
+    public navDonate(): string {
+        return 'Поддержать';
     }
 }
 
