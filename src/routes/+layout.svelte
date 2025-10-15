@@ -36,6 +36,5 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    min-height: 100vh;
 }
 </style>

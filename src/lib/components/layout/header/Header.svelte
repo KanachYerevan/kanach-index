@@ -7,7 +7,7 @@
 <Narrow>
     <header>
         <img src={LOGO} alt="Kanach Logo" />
-        <h1>{locale.title()}</h1>
+        <h1><a href="/">{locale.title()}</a></h1>
         <ul>
             <li><a href="/#about">{locale.navAbout()}</a></li>
             <li><a href="/#contact">{locale.navContact()}</a></li>
@@ -24,6 +24,8 @@ header {
 
     line-height: 50px;
     padding: 10px 0;
+
+    border-bottom: 1px solid #cee4c5;
 }
 
 img {
@@ -37,6 +39,11 @@ h1 {
     margin: 0;
 
     flex-grow: 1;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 ul {
