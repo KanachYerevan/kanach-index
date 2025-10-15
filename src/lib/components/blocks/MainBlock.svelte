@@ -34,7 +34,7 @@ img {
     left: 60%;
     right: 0;
     height: 400px;
-    width: 50%;
+    width: 40%;
 
     border-bottom-left-radius: 400px 100%;
     object-position: right center;

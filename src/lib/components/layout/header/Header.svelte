@@ -9,8 +9,8 @@
         <img src={LOGO} alt="Kanach Logo" />
         <h1>{locale.title()}</h1>
         <ul>
-            <li><a href="/">{locale.navAbout()}</a></li>
-            <li><a href="/">{locale.navContact()}</a></li>
+            <li><a href="/#about">{locale.navAbout()}</a></li>
+            <li><a href="/#contact">{locale.navContact()}</a></li>
             <li><a href="/">{locale.navDonate()}</a></li>
         </ul>
     </header>
@@ -50,5 +50,9 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 10px;
+
+    a {
+        color: #006837;
+    }
 }
 </style>
