@@ -18,11 +18,13 @@
 	onMount(() => {
 		const ctx: CanvasRenderingContext2D | null = canvas.getContext('2d');
 
-		chartInstance = new Chart(ctx, {
-			type,
-			data: JSON.parse(JSON.stringify(data)),
-			options
-		});
+        if (ctx !== null) {
+            chartInstance = new Chart(ctx, {
+                type,
+                data: JSON.parse(JSON.stringify(data)),
+                options
+            });
+        }
 	});
 
 	// Use onDestroy to clean up the chart instance when the component is removed
