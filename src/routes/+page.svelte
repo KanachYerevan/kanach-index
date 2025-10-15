@@ -10,6 +10,10 @@
     import AgeChart from '$lib/components/charts/metrics/AgeChart.svelte';
     import MainBlock from '$lib/components/blocks/MainBlock.svelte';
     import IntroBlock from '$lib/components/blocks/IntroBlock.svelte';
+    import CrownsBlock from '$lib/components/blocks/CrownsBlock.svelte';
+    import HealthBlock from '$lib/components/blocks/HealthBlock.svelte';
+    import DiversityBlock from '$lib/components/blocks/DiversityBlock.svelte';
+    import MaturityBlock from '$lib/components/blocks/MaturityBlock.svelte';
 </script>
 
 <svelte:head>
@@ -19,18 +23,7 @@
 <MainBlock />
 <IntroBlock />
 
-<Narrow>
-    <ChartGrid>
-        <CrownsChart value={18} />
-        <HealthChart value={65} />
-        <DiversityChart value={65} />
-        <AgeChart value={45} />
-    </ChartGrid>
-</Narrow>
-
-<style>
-.score {
-    max-width: 300px;
-    margin: 0 auto;
-}
-</style>
+<CrownsBlock />
+<HealthBlock />
+<DiversityBlock />
+<MaturityBlock />
