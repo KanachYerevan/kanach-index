@@ -24,9 +24,6 @@ header {
 
     line-height: 50px;
     padding: 10px 0;
-
-    /** This hack lets us remove the unnecessary space after the header */
-    margin-bottom: -50px;
 }
 
 img {

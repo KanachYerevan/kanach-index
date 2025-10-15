@@ -55,10 +55,6 @@ img {
     }
 }
 
-h1 {
-    font-weight: 400;
-}
-
 .score {
     background-color: #e0e0e0;
     border: 1px solid #ccc;

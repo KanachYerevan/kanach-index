@@ -16,7 +16,9 @@
 <div class="layout">
     <Header />
 
-    {@render children?.()}
+    <main>
+        {@render children?.()}
+    </main>
 
     <Footer />
 </div>
@@ -25,6 +27,15 @@
 .layout {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
     gap: 50px;
+    min-height: 100vh;
 }
 </style>
