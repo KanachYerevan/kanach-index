@@ -14,6 +14,7 @@
     import HealthBlock from '$lib/components/blocks/HealthBlock.svelte';
     import DiversityBlock from '$lib/components/blocks/DiversityBlock.svelte';
     import MaturityBlock from '$lib/components/blocks/MaturityBlock.svelte';
+    import ActionBlock from '$lib/components/blocks/ActionBlock.svelte';
 </script>
 
 <svelte:head>
@@ -27,3 +28,5 @@
 <HealthBlock />
 <DiversityBlock />
 <MaturityBlock />
+
+<ActionBlock />

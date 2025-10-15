@@ -1,9 +1,11 @@
 <script lang="ts">
     import Narrow from '$lib/components/layout/narrow/Narrow.svelte';
+    import LOGO from '$lib/assets/logo.jpeg';
 </script>
 
 <Narrow>
     <header>
+        <img src={LOGO} alt="Kanach Logo" />
         <h1>Kanach Index</h1>
         <ul>
             <li><a href="/">About</a></li>
@@ -17,13 +19,23 @@
 header {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 
-    line-height: 20px;
+    line-height: 50px;
     padding: 10px 0;
+
+    /** This hack lets us remove the unnecessary space after the header */
+    margin-bottom: -50px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 400;
     margin: 0;
 
     flex-grow: 1;
