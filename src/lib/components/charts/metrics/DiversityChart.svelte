@@ -133,6 +133,7 @@
 
 .chart {
     margin: 10px auto 0;
+    height: 50px;
 }
 
 .value {
