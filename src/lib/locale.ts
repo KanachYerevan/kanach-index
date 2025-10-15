@@ -86,6 +86,18 @@ class EnglishLocale {
     public navDonate(): string {
         return 'Donate';
     }
+
+    public diversityLow(): string {
+        return 'Low';
+    }
+
+    public diversityMedium(): string {
+        return 'Medium';
+    }
+
+    public diversityHigh(): string {
+        return 'High';
+    }
 }
 
 class RussianLocale extends EnglishLocale {
@@ -163,6 +175,18 @@ class RussianLocale extends EnglishLocale {
 
     public navDonate(): string {
         return 'Поддержать';
+    }
+
+    public diversityLow(): string {
+        return 'Низкое';
+    }
+
+    public diversityMedium(): string {
+        return 'Среднее';
+    }
+
+    public diversityHigh(): string {
+        return 'Высокое';
     }
 }
 

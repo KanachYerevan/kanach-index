@@ -35,11 +35,11 @@
     const getLabel = (value: number): string => {
         switch (getRate(value)) {
             case 'bad':
-                return 'Низкое';
+                return locale.diversityLow();
             case 'average':
-                return 'Среднее';
+                return locale.diversityMedium();
             case 'good':
-                return 'Высокое';
+                return locale.diversityHigh();
         }
     };
 </script>
