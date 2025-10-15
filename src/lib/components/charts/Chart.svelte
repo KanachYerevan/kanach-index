@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 	import Chart from 'chart.js/auto';
+    import type { ChartOptions } from 'chart.js';
 
 	type Props = {
 		type: string;
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		data: any;
-		options?: Chart.ChartOptions;
+		options?: ChartOptions;
 	};
 
 	const { type, data, options }: Props = $props();
@@ -20,6 +21,7 @@
 
         if (ctx !== null) {
             chartInstance = new Chart(ctx, {
+                // @ts-ignore
                 type,
                 data: JSON.parse(JSON.stringify(data)),
                 options
