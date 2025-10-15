@@ -18,13 +18,13 @@
                 borderWidth: 4,
                 borderColor: ['#FFFFFF'],
                 circumference: 360,
+                cutout: '80%',
             }]
         }}
 
         options={{
             responsive: true,
             maintainAspectRatio: false,
-            cutout: '80%',
             plugins: {
                 tooltip: {
                     enabled: false,

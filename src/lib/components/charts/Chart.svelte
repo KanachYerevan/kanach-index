@@ -11,12 +11,12 @@
 
 	const { type, data, options }: Props = $props();
 
-	let canvas;
-	let chartInstance;
+	let canvas: HTMLCanvasElement;
+	let chartInstance: Chart;
 
 	// Use onMount to ensure the canvas element is in the DOM
 	onMount(() => {
-		const ctx = canvas.getContext('2d');
+		const ctx: CanvasRenderingContext2D | null = canvas.getContext('2d');
 
 		chartInstance = new Chart(ctx, {
 			type,
