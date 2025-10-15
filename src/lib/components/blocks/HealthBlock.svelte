@@ -1,6 +1,7 @@
 <script lang="ts">
     import Narrow from '$lib/components/layout/narrow/Narrow.svelte';
     import HealthChart from '$lib/components/charts/metrics/HealthChart.svelte';
+    import { locale } from '$lib/locale';
 </script>
 
 <Narrow>
@@ -9,8 +10,8 @@
             <HealthChart value={65} />
         </div>
         <div class="text">
-            <p>Этот показатель отражает процент деревьев, не имеющих серьёзных повреждений, болезней или признаков угнетения. Здоровое дерево — это не только эстетика, но и максимальная польза для города в виде тени и чистого воздуха. Состояние деревьев является прямым индикатором качества ухода за ними и общих условий среды, поэтому низкий показатель может сигнализировать о системных проблемах, требующих нашего общего внимания.</p>
-            <p><a href="/">Подробнее об этом показателе</a></p>
+            <p>{locale.healthDescription()}</p>
+            <p><a href="/">{locale.metricDetails()}</a></p>
         </div>
     </div>
 </Narrow>

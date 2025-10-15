@@ -1,6 +1,7 @@
 <script lang="ts">
     import Narrow from '$lib/components/layout/narrow/Narrow.svelte';
     import DiversityChart from '$lib/components/charts/metrics/DiversityChart.svelte';
+    import { locale } from '$lib/locale';
 </script>
 
 <Narrow>
@@ -9,8 +10,8 @@
             <DiversityChart value={57} />
         </div>
         <div class="text">
-            <p>Этот показатель оценивает, насколько равномерно в городе распределены различные виды деревьев. Высокое разнообразие — это залог устойчивости: город, где не преобладает один-единственный вид, гораздо лучше защищён от эпидемий и вредителей, способных уничтожить конкретную породу. Наша цель — избежать рисков монокультуры и создать здоровую, стабильную и самодостаточную зелёную экосистему для будущих поколений.</p>
-            <p><a href="/">Подробнее об этом показателе</a></p>
+            <p>{locale.diversityDescription()}</p>
+            <p><a href="/">{locale.metricDetails()}</a></p>
         </div>
     </div>
 </Narrow>

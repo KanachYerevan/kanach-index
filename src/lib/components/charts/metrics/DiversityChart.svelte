@@ -1,6 +1,7 @@
 <script lang="ts">
     import Chart from '$lib/components/charts/Chart.svelte';
     import Widget from '$lib/components/charts/widget/Widget.svelte';
+    import { locale } from '$lib/locale';
 
     type Props = {
         value: number;
@@ -43,7 +44,7 @@
     };
 </script>
 
-<Widget title="Видовое разнообразие" help="/">
+<Widget title={locale.diversityTitle()} help="/">
     <div class={`wrapper rate_${getRate(value)}`}>
         <div class="chart">
             <Chart

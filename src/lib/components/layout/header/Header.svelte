@@ -1,12 +1,13 @@
 <script lang="ts">
     import Narrow from '$lib/components/layout/narrow/Narrow.svelte';
     import LOGO from '$lib/assets/logo.jpeg';
+    import { locale } from '$lib/locale';
 </script>
 
 <Narrow>
     <header>
         <img src={LOGO} alt="Kanach Logo" />
-        <h1>Kanach Index</h1>
+        <h1>{locale.title()}</h1>
         <ul>
             <li><a href="/">About</a></li>
             <li><a href="/">Contact</a></li>

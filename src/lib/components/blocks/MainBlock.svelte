@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { locale } from '$lib/locale';
     import IMAGE from '$lib/assets/home.jpg';
 </script>
 
@@ -7,15 +8,15 @@
 
     <div class="content">
         <div class="padded">
-            <h1>How Green is Yerevan?</h1>
-            <p>We collected data on thousands of trees, measured their different aspects, and calculated the Kanach Index to give you an idea of how green your city is.</p>
+            <h1>{locale.howGreenIs()}</h1>
+            <p>{locale.mainIntro()}</p>
 
             <div class="score">
                 <div class="fill" style:width="56%"></div>
                 <div class="value">Score: 2.8 / 5</div>
             </div>
 
-            <p>Scroll down to understand how we calculated this score and what it means.</p>
+            <p>{locale.mainScroll()}</p>
         </div>
     </div>
 </div>

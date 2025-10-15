@@ -1,6 +1,7 @@
 <script lang="ts">
     import Narrow from '$lib/components/layout/narrow/Narrow.svelte';
     import CrownsChart from '$lib/components/charts/metrics/CrownsChart.svelte';
+    import { locale } from '$lib/locale';
 </script>
 
 <Narrow>
@@ -9,8 +10,8 @@
             <CrownsChart value={18} />
         </div>
         <div class="text">
-            <p>Этот показатель отражает, какой процент территории города укрыт тенью древесных крон, создавая своего рода «зелёный щит». Для солнечного Еревана это один из важнейших параметров, напрямую влияющий на борьбу с эффектом «теплового острова», очистку воздуха и создание комфортной городской среды. Особенно большой вклад вносят взрослые, здоровые деревья с широкой кроной, сохранение которых является ключевой задачей.</p>
-            <p><a href="/">Подробнее об этом показателе</a></p>
+            <p>{locale.crownsDescription()}</p>
+            <p><a href="/">{locale.metricDetails()}</a></p>
         </div>
     </div>
 </Narrow>

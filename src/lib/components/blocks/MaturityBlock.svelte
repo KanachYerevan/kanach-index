@@ -1,6 +1,7 @@
 <script lang="ts">
     import Narrow from '$lib/components/layout/narrow/Narrow.svelte';
     import AgeChart from '$lib/components/charts/metrics/AgeChart.svelte';
+    import { locale } from '$lib/locale';
 </script>
 
 <Narrow>
@@ -9,8 +10,8 @@
             <AgeChart value={45} />
         </div>
         <div class="text">
-            <p>Этот показатель отражает возрастной баланс зелёного фонда города — соотношение молодых, подрастающих и взрослых деревьев. Именно взрослые, зрелые деревья приносят максимальную пользу: дают густую тень, эффективно очищают воздух и формируют устойчивый зелёный каркас. Низкая доля таких деревьев — тревожный сигнал, который может указывать на проблемы с массовой заменой или потерей самых ценных зелёных активов города.</p>
-            <p><a href="/">Подробнее об этом показателе</a></p>
+            <p>{locale.maturityDescription()}</p>
+            <p><a href="/">{locale.metricDetails()}</a></p>
         </div>
     </div>
 </Narrow>

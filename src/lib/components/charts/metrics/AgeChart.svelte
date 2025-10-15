@@ -2,6 +2,7 @@
     import PercentChart from '$lib/components/charts/pie/PercentChart.svelte';
     import Widget from '$lib/components/charts/widget/Widget.svelte';
     import Chart from '$lib/components/charts/Chart.svelte';
+    import { locale } from '$lib/locale';
 
     type Props = {
         value: number;
@@ -10,16 +11,16 @@
     const { value }: Props = $props();
 </script>
 
-<Widget title="Индекс зрелости" subtitle="Возрастная структура" help="/" width={2}>
+<Widget title={locale.maturityTitle()} subtitle={locale.maturitySubtitle()} help="/" width={2}>
     <div class="chart">
         <Chart
             type='bar'
 
             data={{
-                labels: ['Взрослые', 'Зреющие', 'Молодые'],
+                labels: [locale.ageMature(), locale.ageGrowing(), locale.ageYoung()],
                 datasets: [
                     {
-                        label: 'Взрослые',
+                        label: locale.ageMature(),
                         data: [15],
                         backgroundColor: ['#16A34A'],
                         borderColor: ['#f9fafb'],
@@ -28,7 +29,7 @@
                         barThickness: 30,
                     },
                     {
-                        label: 'Подрастающие',
+                        label: locale.ageGrowing(),
                         data: [45],
                         backgroundColor: ['#FBBF24'],
                         borderColor: ['#f9fafb'],
@@ -37,7 +38,7 @@
                         barThickness: 30,
                     },
                     {
-                        label: 'Молодые',
+                        label: locale.ageYoung(),
                         data: [40],
                         backgroundColor: ['#F97316'],
                         borderColor: ['#f9fafb'],
